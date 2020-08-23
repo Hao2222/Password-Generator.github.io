@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Password Generator</h1>
+    <div class="container">
+        <p> Please enter the length of your desire password below:</p>
+        <label>Length of password :</label> 
+        <input type="number" maxlength="100" value=" " id="length"> 
+        <br>
+        <p>Check the boxes below if you want your password to include upper case letters, lower case letters, numbers, and special characters:</p>
+        <div class="checks">
+            <label  class="label">Checkbox for Upper Case Letter :</label>
+            <input type="checkbox" id="uppercase" checked class="val"><br>
+        </div>
+        <div class="checks">
+            <label  class="label">Checkbox for Lower case letter :</label>
+            <input type="checkbox" id="lowercase" checked class="val"><br>
+        </div>
+        <div class="checks">
+            <label  class="label">Check box for numbers :</label>
+            <input type="checkbox" id="number" checked class="val"><br>
+        </div>
+        <div class="checks">
+            <label  class="label">Checkbox for symbols :</label>
+            <input type="checkbox" id="character" checked class="val"><br> 
+        </div>
+        <div class="shuffle">
+            <label  class="label">Checkbox for password shuffling (password will not neccessarily be in the order above) :</label>
+            <input type="checkbox" id="shuffling" checked class="val"><br> 
+        </div>
+        <p>Here's your password:</p>
+        <p id="results" class="results"></p><br> 
+
+        <button id="generate" class="btn">Create Password</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
